@@ -40,7 +40,7 @@ void style_selector(MY_COLOR color, FORMAT font)
 
 int color_printf(MY_COLOR color, FORMAT font, const char * format_line, ...)
 {
-    check_expression(format_line != NULL, POINTER_IS_NULL);
+    check_expression(format_line, POINTER_IS_NULL);
 
     va_list arguments;
     style_selector(color, font);
