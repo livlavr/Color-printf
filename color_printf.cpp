@@ -45,7 +45,7 @@ void style_selector(MY_COLOR color, FORMAT font)
             printf("\033[0m");
             break;
         default:
-            warning(false, "COLOR SELECTOR ERROR" && !OK);
+            warning(false, "COLOR SELECTOR ERROR" && !OKEY);
     }
 }
 
