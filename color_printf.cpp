@@ -3,7 +3,6 @@
 #include <stdlib.h>
 
 #include "color_printf.h"
-#include "custom_asserts.h"
 
 void style_selector(MY_COLOR color, FORMAT font)
 {
