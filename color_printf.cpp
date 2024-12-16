@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdarg.h>
+#include <stdlib.h>
 
 #include "color_printf.h"
 #include "custom_asserts.h"
@@ -15,7 +16,7 @@ void style_selector(MY_COLOR color, FORMAT font)
             printf("\033[0m");
             break;
         default:
-            printf("FONT SELECTOR ERROR");
+            printf("Font Selector Error\n");
             break;
     }
     switch(color)
@@ -45,13 +46,17 @@ void style_selector(MY_COLOR color, FORMAT font)
             printf("\033[0m");
             break;
         default:
-            warning(false, "COLOR SELECTOR ERROR" && !OKEY);
+            printf("Color Set Error\n");
+            exit(0);
     }
 }
 
 int color_printf(MY_COLOR color, FORMAT font, const char * format_line, ...)
 {
-    check_expression(format_line, POINTER_IS_NULL);
+    if(!format_line) {
+        printf("Format Line Null Pointer\n");
+        return 0;
+    }
 
     va_list arguments;
     style_selector(color, font);
