@@ -6,13 +6,13 @@
 enum MY_COLOR
 {
     DEFAULT_COLOR     = 0,  /**< Value for default output color */
-    RED_COLOR         = 31, /**< Value for red output color */
-    GREEN_COLOR       = 32, /**< Value for green output color */
-    YELLOW_COLOR      = 33,  /**< Value for yellow output color */
-    BLUE_COLOR        = 34,  /**< Value for yellow output color */
-    MAGENTA_COLOR     = 35,  /**< Value for yellow output color */
-    CYAN_COLOR        = 36,  /**< Value for yellow output color */
-    WHITE_COLOR       = 37  /**< Value for yellow output color */
+    RED_COLOR         = 31, /**< Value for red output color     */
+    GREEN_COLOR       = 32, /**< Value for green output color   */
+    YELLOW_COLOR      = 33, /**< Value for yellow output color  */
+    BLUE_COLOR        = 34, /**< Value for yellow output color  */
+    MAGENTA_COLOR     = 35, /**< Value for yellow output color  */
+    CYAN_COLOR        = 36, /**< Value for yellow output color  */
+    WHITE_COLOR       = 37  /**< Value for yellow output color  */
 };
 
 /// @brief An enum type
